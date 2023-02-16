@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PENALDO</title>
+        <link rel="stylesheet" type="text/css" href="penaldo.css">
+        <script type="text/javascript" src="penaldo.js"></script>
+    </head>
+    <body class="backimg">
+        <div class="container">
+                <center>
+                    <div class="topBanner">
+                        <img class="logo" src="logo.png" >
+                    </div>
+                    
+                    <img class="ground" src="post.png" >
+                    <img class="goalkeeper" src="BlackIdle.png" id="b2">
+                    <button id="b1" class="ball" onclick="goal()"><img  class="i1" src="ball.png"></button>
+                </center>
+        
+            <div class="scoreBoard">
+                <h1>User Win: <span id="Score">0</span></h1>
+            </div>
+
+            <div class="LeftTopControl">
+                <button class="ballClickTop" onclick="LeftTop()"><img class="topReduce" src="ball.png"></button>
+            </div>
+
+            <div class="LeftBottomControl">
+                <button class="ballClickdown" onclick="LeftBottom()"><img class="bottomReduce" class="bottomReduce" src="ball.png"></button>
+            </div>
+
+            <div class="rightTopControl">
+                <button class="ballClickTop" onclick="RightTop()"><img  class="topReduce" src="ball.png"></button>
+            </div>
+
+            <div class="rightBottomControl">
+                <button class="ballClickdown" onclick="RightBottom()"><img class="bottomReduce" src="ball.png"></button>
+                
+            </div>
+
+            <div class="centerControl">
+                <button class="ballClickdown" onclick="CenterTop()"><img  class="topReduce" src="ball.png"></button>
+                
+            </div>
+
+            <div class="center">
+                <h1 id="GoalDone1"></h1>
+            </div>
+            
+
+            <div class="left">
+                <h1 id="GoalDone2"></h1>
+            </div>
+
+            <!--Increment Button-->
+            <div class="borderButton">
+                <div class="wrapper">
+                    <span class="minus">-</span>
+                    <span class="num">0</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
